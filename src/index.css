@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #14181c;
+  padding-top: 69px;
+  color: gold
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navbar {
+  display: flex;
+  overflow: hidden;
+  background-color: #202020;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  color: gold;
+  box-shadow: 0px 12px 100px 10px rgba(199, 193, 193, 0.37);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: gold;
+}
+
+.navTitle {
+  margin-left: 300px;
+}
+
+.navTitle:hover {
+  color:indianred
+}
+
+.navForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 140px;
+}
+
+.navInput {
+  display: flex;
+  height: 25px;
+  width: 150px;
+  border-radius: 5px;
+  padding-left: 10px;
+  transition: width 0.5s ease;
+}
+
+.navInput:focus {
+  width: 300px;
+  border: none;
+}
+
+.lupa {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 28%;
+  margin-left: 180px;
+}
+
+.navLinks a {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.navLinks a:hover {
+  border-top: 2px solid gold;
+}
+
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.movies {
+  display: flex;
+  justify-content: center;
+  background-color: #14181c;
+  border-radius: 20px;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.posters {
+  border-radius: 10px;
+  height: 300px;
+  width: 230px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #3F3F3F;
+  padding: 5px 5px 5px 5px;
+}
+
+.posters:hover {
+  box-shadow: 0 0px 16px 0px rgba(199, 193, 193, 0.37), 10px 17px 50px 0px rgba(199, 193, 193, 0.37);
+  display: block; 
+
+}
+
+.singleMovie {
+  display: flex;
+  flex-direction: row;
+  color: gold;
+}
+
+.singleP {
+  margin-left: 55px;
+}
+
+.singleMovieInfo {
+  color: gold;
+  font-size: 24px;
+  margin-top: 50px;
+  margin-left: 50px;
+  line-height: 2em;
+}
+
+.singlePoster {
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 30px;
+  background-color: #4f5f6d;
+  padding: 5px 5px 5px 5px;
+}
+
+.moviePlot {
+  margin-left: 70px;
+  width: 800px;
+  line-height: 1.5em;
+  border-left: 2px solid gold;
+  padding: 10px;
+}
+
+.favButton {
+  margin-top: 20px;
+  padding: 5px 5px 5px 5px;
+  margin-left: 120px;
+  background-color: #202020;
+  color: gold;
+  border-radius: 5px;
+  border: 1px solid gold;
+  cursor: pointer
+}
+
+.favButton:hover {
+  background-color: #353232;
+}
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signForm {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  color: gold;
+  border-radius: 10px;
+  background-color: #14181c;
+  padding: 38px 40px 40px 40px;
+  line-height: 3em;
+  margin-top: 30px;
+}
+
+.signForm input {
+  height: 25px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.formSubmit {
+  display: flex;
+  border-radius: 5px;
+  width: 60px;
+  margin-top: 25px;
+}
+
+.userTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.users {
+  margin-left: 120px;
+}
+
+.users a{
+  text-decoration: none;
+  color: gold;
+  margin-left: 50px;
+}
+
+.littleMovies {
+  display: flex;
+  background-color: #14181c;
+  border-radius: 20px;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.littlePosters {
+  border-radius: 10px;
+  height: 100px;
+  width: 77px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #3F3F3F;
+  padding: 3px 3px 3px 3px;
+}
+
+.littlePosters:hover {
+  box-shadow: 0 0px 16px 0px rgba(199, 193, 193, 0.37), 10px 17px 50px 0px rgba(199, 193, 193, 0.37);
+}
+
+.about {
+  text-decoration: none;
+  color: gold;
+  margin-left: 120px;
+  width: 800px;
+  font-size: 20px;
+  line-height: 2em;
+  border-left: gold solid 3px;
+  padding-left: 20px;
+  margin-top: 100px;
+}
+
+.about a{
+  text-decoration: underline;
+  color: gold;
+}
