@@ -44,7 +44,10 @@ function SignUp() {
       e.target.setCustomValidity("Please enter a valid email");
       e.target.reportValidity();
     }
-    else handleChange(e)
+    else {
+      e.target.setCustomValidity("");
+      handleChange(e)
+    }
   }
 
   function userValidation(e) {
@@ -54,7 +57,10 @@ function SignUp() {
       e.target.setCustomValidity("Please enter a valid username");
       e.target.reportValidity();
     }
-    else handleChange(e)
+    else {
+      e.target.setCustomValidity("");
+      handleChange(e)
+    }
   }
 
   function validate(e) {
