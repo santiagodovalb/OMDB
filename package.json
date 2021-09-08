@@ -28,11 +28,10 @@
     "volleyball": "^1.5.1"
   },
   "scripts": {
-    "start": "nodemon api/server.js",
+    "start": "node api/server.js",
     "server": "nodemon api/server.js",
     "client": "react-scripts start",
     "build": "react-scripts build",
-    "seed": "node api/seed"
   },
   "proxy": "http://localhost:3001",
   "eslintConfig": {

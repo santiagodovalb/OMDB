@@ -79,7 +79,7 @@ app.get("*", (req, res) => {
 //SERVER UP
 db.sync({ force: false })
   .then(function () {
-    app.listen(3001, function () {
+    app.listen(process.env.PORT || 3001, function () {
       console.log("Server is listening on port 3001!");
       console.log("DB connected");
     });
