@@ -39,14 +39,6 @@ function SignIn() {
       })
     }
 
-    // const user = users.filter(user => user.username === state.username && user.password === state.password)[0]
-    
-    // if (user) {
-    //   dispatch(setUser(user))
-    //   history.push(`/users/${user.id}`)
-    // }
-
-    // else setFailedLog(true)
   
 
   return (

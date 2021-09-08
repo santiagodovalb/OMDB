@@ -49,7 +49,7 @@ function SignUp() {
       document.getElementById('signUpSpan').innerHTML = 'Username or email already in use'
       return
     }
-    axios.post('http://localhost:3001/api/users', state)
+    axios.post('/api/users', state)
     .then(() => dispatch(setUsers()))
     .catch(res => console.log(res))
     history.push('/sign-in')

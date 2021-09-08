@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
 import {setUser} from '../state/user'
+require('dotenv').config()
+const { REACT_APP_API_KEY } = process.env
 
 function SingleMovie() {
 
@@ -16,7 +18,7 @@ function SingleMovie() {
 
     useEffect(() => {
         axios
-      .get(`https://www.omdbapi.com/?apikey=20dac387&i=${movieId}`)
+      .get(`https://www.omdbapi.com/?apikey=${REACT_APP_API_KEY}&i=${movieId}`)
       .then(res => res.data)
       .then(movie => setMovie(movie))
     }, [])
