@@ -51,9 +51,9 @@ function SignUp() {
   }
 
   function userValidation(e) {
-    var re = /[a-zA-Z0-9._-]/
+    var re = /[$&+,:;=?@#|'<>.^*()%!-]/
     var validate = re.test(e.target.value)
-    if (!validate) {
+    if (validate) {
       e.target.setCustomValidity("Please enter a valid username");
       e.target.reportValidity();
     }
@@ -93,7 +93,6 @@ function SignUp() {
       <form onSubmit={handleSubmit} className="signForm">
         <label>- Username</label>
         <input
-          onChange={handleChange}
           onBlur={userValidation}
           type="text"
           name="username"
@@ -101,7 +100,6 @@ function SignUp() {
         ></input>
         <label>- Email</label>
         <input
-          onChange={handleChange}
           onBlur={mailValidation}
           type="text"
           name="email"
