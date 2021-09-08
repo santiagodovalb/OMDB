@@ -44,15 +44,21 @@ function SignUp() {
       e.target.setCustomValidity("Please enter a valid email");
       e.target.reportValidity();
     }
+    else handleChange(e)
   }
 
   function userValidation(e) {
     var re = /[a-zA-Z0-9._-]/
-    var validate = re.test(username)
+    var validate = re.test(e.target.value)
     if (!validate) {
       e.target.setCustomValidity("Please enter a valid username");
       e.target.reportValidity();
     }
+    else handleChange(e)
+  }
+
+  function validate(e) {
+    e.target.reportValidity();
   }
 
   const handleSubmit = (e) => {
