@@ -18,7 +18,8 @@ function Users() {
 
     return(
         <div className='users'>
-            {users.map(user => {
+            {console.log(users)}
+            {users?.map(user => {
                 return (
                 <div>
                 <Link to={`/users/${user.id}`}>

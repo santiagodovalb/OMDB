@@ -1,45 +1,8 @@
 import React from "react";
-import { useState, useEffect } from 'react'
-import {useHistory} from 'react-router-dom'
-import axios from 'axios'
-import { useDispatch, useSelector } from "react-redux";
-import { setUser } from '../state/user'
-
+import useSignIn from "../hooks/useSignIn";
 function SignIn() {
 
-  const [state, setState] = useState({
-    username: '',
-    password: ''
-  })
-
-  const dispatch = useDispatch();
-  const users = useSelector(state => state.users)
-
-  const [failedLog, setFailedLog] = useState(false)
-
-  const history = useHistory()
-
-  const handleChange = (e) => {
-    setState({...state, [e.target.name]: e.target.value})
-  }
-
-  const handleSubmit = (e) => {
-
-    e.preventDefault();
-    
-      axios.post("/api/sign-in", {
-        username: state.username,
-        password: state.password,
-      })
-      .then(user => {dispatch(setUser(user.data))
-      history.push(`/users/${user.data.id}`)})
-      .catch(err => {
-      console.log(err)
-      setFailedLog(true)
-      })
-    }
-
-  
+  const {handleChange, handleSubmit, failedLog} = useSignIn()
 
   return (
     <div className='sign'>

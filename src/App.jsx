@@ -1,19 +1,19 @@
 import React from "react";
 import { useEffect } from "react";
-import Navbar from "../containers/Navbar";
-import Home from "../containers/Home";
+import Navbar from "./components/Navbar";
+import Home from "./containers/Home";
 import { Route, Switch, Redirect } from "react-router-dom";
-import SingleMovie from "../containers/SingleMovie";
-import SignUp from "../containers/SignUp";
-import SignIn from "../containers/SignIn";
-import Search from "../containers/Search";
-import User from "../containers/User";
+import SingleMovie from "./containers/SingleMovie";
+import SignUp from "./containers/SignUp";
+import SignIn from "./containers/SignIn";
+import Search from "./containers/Search";
+import User from "./containers/User";
 import { useDispatch } from "react-redux";
-import { setUsers } from "../state/users";
-import { setUser } from "../state/user";
+import { setUsers } from "./state/users";
+import { setUser } from "./state/user";
 import axios from 'axios'
-import Users from '../containers/Users'
-import About from '../containers/About'
+import Users from './containers/Users'
+import About from './containers/About'
 
 function App() {
   const dispatch = useDispatch();
