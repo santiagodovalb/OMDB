@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./containers/Navbar";
 import Home from "./containers/Home";
 import { Route, Switch, Redirect } from "react-router-dom";
 import SingleMovie from "./containers/SingleMovie";

@@ -1,5 +1,5 @@
 import React from 'react';
-import Movies from '../containers/Movies'
+import Movies from '../components/Movies'
 import { useSelector } from 'react-redux';
 
 function User() {

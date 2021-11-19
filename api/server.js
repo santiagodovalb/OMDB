@@ -1,9 +1,8 @@
-const path = require('path');
 
-//EXPRESS
 const express = require("express");
 const app = express();
 
+const path = require('path');
 // BODY PARSER
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());

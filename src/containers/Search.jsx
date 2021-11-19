@@ -2,8 +2,8 @@ import React from 'react';
 import {useParams} from 'react-router-dom'
 import {useEffect, useState} from 'react'
 import axios from 'axios'
-import Movies from '../containers/Movies'
-
+import Movies from '../components/Movies'
+const { REACT_APP_API_KEY } = process.env
 
 function Search() {
 
@@ -13,7 +13,7 @@ function Search() {
 
     useEffect(() => {
         axios
-      .get(`https://www.omdbapi.com/?apikey=343de2e6&s=${input}`)
+      .get(`https://www.omdbapi.com/?apikey=${REACT_APP_API_KEY}&s=${input}`)
       .then(res => res.data)
       .then(moviesList => setMovies(moviesList.Search))
     }, [movies])

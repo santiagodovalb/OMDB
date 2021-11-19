@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 import React from 'react';
 import { Link } from 'react-router-dom'
-import LittleMovies from './LittleMovies'
+import LittleMovies from '../components/LittleMovies'
 import { useEffect } from 'react'
 import { useDispatch } from "react-redux";
 import { setUsers } from "../state/users";
@@ -18,7 +18,7 @@ function Users() {
 
     return(
         <div className='users'>
-            {console.log(users)}
+ 
             {users?.map(user => {
                 return (
                 <div>
