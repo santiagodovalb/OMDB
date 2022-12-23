@@ -29,7 +29,6 @@
     "sequelize": "^6.5.0",
     "volleyball": "^1.5.1"
   },
-  "proxy": "http://localhost:3001/",
   "scripts": {
     "start": "concurrently 'npm run server' 'npm run client'",
     "server": "nodemon api/server.js",
