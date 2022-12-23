@@ -40,10 +40,9 @@ passport.use(
     },
     function (username, password, done) {
       User.findOne({ where: { username } })
-
         .then((user) => {
+          console.log('HERE', user)
           if (!user) return done(null, false);
-
           user.hash(password, user.salt).then((hashed) => {
             if (hashed !== user.password) return done(null, false);
             return done(null, user);
