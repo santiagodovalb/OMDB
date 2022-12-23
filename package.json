@@ -30,7 +30,7 @@
     "volleyball": "^1.5.1"
   },
   "scripts": {
-    "start": "concurrently 'npm run server' 'npm run client'",
+    "start": "cd api && npm start",
     "server": "nodemon api/server.js",
     "client": "react-scripts start",
     "build": "react-scripts build"
